@@ -1,281 +1,185 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Parente Painting | Professional Painting Services</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+---
+layout: default
+---
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-				padding: 0;
-            }
-			.subtitles {display: none !important;}
-			#slides { position: relative; overflow: auto; }
-			#slides li { list-style: none; }
-				#slides ul li { float: left; }
-			ol.dots {
-				padding: 0;
-				margin: 0;
-				list-style-type: none;
-				position: absolute;
-				height: 15px;
-				left: 50%;
-				margin-left: -15px;
-				bottom: 40px;
-			
-			}
-			ol.dots li {
-				display: inline-block;
-				text-align: center;
-				color: white;
-				font-size: 1px;
-				padding: 0;
-				margin: 0;
-				margin-right: 15px;
-				content: " ";
-				border: 4px solid white;
-				border-radius: 50%;
-				width: 20px;
-				height: 20px;
-				opacity: .5;
-				cursor: pointer;
-				border-color: #e5e5e5;
-			}
-			ol.dots li.active {
-				border-color: white;
-				opacity: 1;	
-			}
-			ol.dots li:hover {
-				opacity: 1;
-					
-			}
-			
-        </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="container-fluid" id="jumbo-slider">
+  <div id="slides">
+    <ul style="margin: 0; padding: 0;">
+      <li><img src="/img/before.jpg" alt="" class="img-responsive" style="width:100%;"></li>
+      <li><img src="/img/after.jpg" alt="" class="img-responsive" style="width:100%;"></li>
+    </ul>
+  </div> <!-- #slides -->
+</div>
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    </head>
-    <body>
-    <nav class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#jumbo-slider" style="position:absolute; top: 0px;"><img src="img/logo.png"></a>
-        </div>
-        <div class="navbar-collapse collapse navbar-left">
-          <ul class="nav navbar-nav">
-              <li><a href="#jumbo-slider">Work</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-              <li><a href="#about-me">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="container-fluid" id="jumbo-slider">
-      <div id="slides">
-        <ul style="margin: 0; padding: 0;">
-        	<li><img src="/img/before.jpg" alt="" class="img-responsive" style="width:100%;"></li>
-            <li><img src="/img/after.jpg" alt="" class="img-responsive" style="width:100%;"></li>
-        </ul>
-     	</div> <!-- #slides -->
-    </div>
-
-        
 <div class="blueish" id="testimonials">
-      <div class="container">
-            
-          <div class="btn-left"></div>
-          <div class="btn-right"></div>
-          <div class="title">
-                <div class="icon"><img src="img/star.png"></div>
-                <div class="title-img"><img class="img-responsive" alt="What People Say" src="img/whatpeoplesay.png"></div>
-          </div>
-          <div class="subtitles">
-            <div class="left active"><a href="#">what people say</a></div>
-              <div class="center"><a href="#">about nick</a></div>
-              <div class="right"><a href="#">contact me</a></div>
-          </div>
-          <div class="lol" style="position: relative;">
-          <div class="testimonial active" style="display:block;">
-              
-              <div class="testimonial-content">
-                <p>Nick and his team were fantastic - my rooms look great. There's no doubt whom I would call for my next project, and I wouldn't recommend anyone else.</p>
-              </div>
-              <div class="testimonial-meta">
-                    <span class="test-title">Alan Grey</span>
-                    <span class="loc">Rye, NY</span>
-                </div>
-                
-          </div>
-          <div class="testimonial">
-              
-              <div class="testimonial-content">
-                <p>They were extremely professional and took the time to make sure everything was done exactly how I wanted. I couldn't be happier.</p>
-              </div>
-              <div class="testimonial-meta">
-                    <span class="test-title">Sarah Kowalski</span>
-                    <span class="loc">Scarsdale, NY</span>
-                </div>
-                
-          </div>
-              <div class="testimonial">
-              
-              <div class="testimonial-content">
-                <p>The job was perfect and my home is like it was before they started. They really took care of my home and left it as clean as they found it</p>
-              </div>
-              <div class="testimonial-meta">
-                    <span class="test-title">Joshua Martz</span>
-                    <span class="loc">New Rochelle, NY</span>
-                </div>
-                
-          </div>
-              </div> <!-- lol -->
+  <div class="container">
+
+    <div class="btn-left"></div>
+    <div class="btn-right"></div>
+    <div class="title">
+      <div class="icon"><img src="img/star.png"></div>
+      <div class="title-img"><img class="img-responsive" alt="What People Say" src="img/whatpeoplesay.png"></div>
+    </div>
+    <div class="subtitles">
+      <div class="left active"><a href="#">what people say</a></div>
+      <div class="center"><a href="#">about nick</a></div>
+      <div class="right"><a href="#">contact me</a></div>
+    </div>
+    <div class="lol" style="position: relative;">
+      <div class="testimonial active" style="display:block;">
+
+        <div class="testimonial-content">
+          <p>Nick and his team were fantastic - my rooms look great. There's no doubt whom I would call for my next project, and I wouldn't recommend anyone else.</p>
+        </div>
+        <div class="testimonial-meta">
+          <span class="test-title">Alan Grey</span>
+          <span class="loc">Rye, NY</span>
+        </div>
+
       </div>
+      <div class="testimonial">
+
+        <div class="testimonial-content">
+          <p>They were extremely professional and took the time to make sure everything was done exactly how I wanted. I couldn't be happier.</p>
+        </div>
+        <div class="testimonial-meta">
+          <span class="test-title">Sarah Kowalski</span>
+          <span class="loc">Scarsdale, NY</span>
         </div>
 
-    <div class="whitish" id="about-me">
-        
-        <div class="container">
-            <div class="title">
-                <div class="icon"><img src="img/brush.png"></div>
-                <div class="title-img"><img class="img-responsive" alt="About Nick" src="img/aboutnick.png"></div>
-            </div>
-            <div class="subtitles">
-            <div class="left"><a href="#">what people say</a></div>
-              <div class="center active"><a href="#">about nick</a></div>
-              <div class="right"><a href="#">get in touch</a></div>
-          </div>
-            
-            <div>
-            	<img src="img/nickparente.jpg" class="thumbnail img-responsive" style="max-width:400px;margin: 0 auto;" alt="">
-            </div>
-            
-            <div class="media">
+      </div>
+      <div class="testimonial">
 
-                <div class="media-body">
-                    
-                    <p>A lifelong resident of New Rochelle, President and founder Nick Parente brings nearly three decades of industry experience to every job. His knowledge and expertise form the foundation on which Parente Painting has been built. He believes that a strong focus on customer satisfaction is paramount, and strives to exceed his clients' expecations on every project.</p>
-<p>Since 1988, Parente Painting has committed itself to providing the highest-quality painting, wall covering, and restorative services to the greater West Chester Area. We take pride in our work and in bringing your vision to life - whether it be a simple touchup, restoration, or complete redesign. Our 25 years of industry experience means we'll get your job done right, on budget, and on time, no matter how large or small.</p>
-<p>Our Services Include:<br>
-<ul><li>Interior & Exterior Painting</li>
-<li>Wallpaper Hanging & Removal</li><li>Refinishing</li><li>Pressure Cleaning</li><li>Staining & Sealing</li><li>Carpentry</li></ul>
-<p>Our team of professionals are fully licensed, insured, and will treat your residence as if it were their own. Contact us today for a free estimate and consultation!</p>
-<p>Lean on our experience - just not your walls (at least until the paint's dry). </p>
-
-                </div>
-            </div>
-            
+        <div class="testimonial-content">
+          <p>The job was perfect and my home is like it was before they started. They really took care of my home and left it as clean as they found it</p>
         </div>
-        
+        <div class="testimonial-meta">
+          <span class="test-title">Joshua Martz</span>
+          <span class="loc">New Rochelle, NY</span>
+        </div>
+
+      </div>
+    </div> <!-- lol -->
+  </div>
+</div>
+
+<div class="whitish" id="about-me">
+
+  <div class="container">
+    <div class="title">
+      <div class="icon"><img src="img/brush.png"></div>
+      <div class="title-img"><img class="img-responsive" alt="About Nick" src="img/aboutnick.png"></div>
     </div>
-        
-    <div class="blueish" id="contact">
-        <div class="container">
-            <div class="title">
-                <div class="icon"><img src="img/chatbubble.png"></div>
-                <div class="title-img"><img class="img-responsive" alt="Get in Touch" src="img/getintouch.png"></div>
-          </div>
-          <div class="subtitles">
-            <div class="left"><a href="#">what people say</a></div>
-              <div class="center"><a href="#">about nick</a></div>
-              <div class="right active"><a href="#">get in touch</a></div>
-          </div>
-            
-            <div class="form-content">
-                
-                <div class="row" style="padding: 10px 0 20px;">
-                    <div class="col-lg-4">
-                        <div class="media">
-                            <div class="pull-left"><img class="media-object" src="img/phone.png" alt=""></div>
-                            <div class="media-body">
-                                <span class="media-title">Phone</span>
-                                <p> Give us a ring anytime at <span class="phonenumber">914.576.9141</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="media">
-                            <div class="pull-left"><img class="media-object" src="img/www.png" alt=""></div>
-                            <div class="media-body">
-                                <span class="media-title">Web</span>
-                                <p>Complete the form below or email us at <a href="mailto:parentepainting19@gmail.com">parentepainting19<br>@gmail.com</a>.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="media">
-                            <div class="pull-left"><img class="media-object" src="img/twitter.png" alt=""></div>
-                            <div class="media-body">
-                                <span class="media-title">Media</span>
-                                <p>Like us on <a href="#">Facebook</a> and follow us on <a href="#">Twitter</a>!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="formish-wrapper" style="max-width: 700px;margin: 0 auto;">
-                <form action="/mailer.php?callback=parentepainting.com" class="form-horizontal" role="form" method="post">
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Name</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" id="name" name="FullName" placeholder="Name">
-                        </div>
-                      </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Email</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" id="email" name="Email" placeholder="Email">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputPassword" class="col-sm-2 control-label">Phone</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" name="phone" name="Phone" id="phoneNum" placeholder="Phone">
-                        </div>
-                      </div>
-                    <div class="form-group">
-                        <label for="inputPassword" class="col-sm-2 control-label">Message</label>
-                        <div class="col-sm-10">
-                          <textarea class="form-control" name="Message" rows="5"></textarea>
-                        </div>
-                      </div>
-                    <div style="text-align: right;"><button type="submit" class="btn btn-primary">Send Your Request</button></div>
-                </form>
-                </div>
-            </div>
-            
-        </div>
+    <div class="subtitles">
+      <div class="left"><a href="#">what people say</a></div>
+      <div class="center active"><a href="#">about nick</a></div>
+      <div class="right"><a href="#">get in touch</a></div>
     </div>
 
-      <footer>
-        <div class="container"><a class="navbar-brand" href="#"><img src="img/logowhite.png"></a><p style="padding-top: 24px; font-size: 12px;">&copy; 2014 Parente Painting | All rights reserved | 58 Hillside Avenue, New Rochelle, NY 10801 | Website by <a target="_blank" href="//91ferns.com" style="color:#056838; font-weight: bold;">91ferns Web Development</a></p></div>
-      </footer>
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <div>
+      <img src="img/nickparente.jpg" class="thumbnail img-responsive" style="max-width:400px;margin: 0 auto;" alt="">
+    </div>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
-		<script src="//unslider.com/unslider.min.js"></script>
-        <script src="js/main.js"></script>
-        
+    <div class="media">
 
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-    </body>
-</html>
+      <div class="media-body">
+
+        <p>A lifelong resident of New Rochelle, President and founder Nick Parente brings nearly three decades of industry experience to every job. His knowledge and expertise form the foundation on which Parente Painting has been built. He believes that a strong focus on customer satisfaction is paramount, and strives to exceed his clients' expecations on every project.</p>
+        <p>Since 1988, Parente Painting has committed itself to providing the highest-quality painting, wall covering, and restorative services to the greater West Chester Area. We take pride in our work and in bringing your vision to life - whether it be a simple touchup, restoration, or complete redesign. Our 25 years of industry experience means we'll get your job done right, on budget, and on time, no matter how large or small.</p>
+        <p>Our Services Include:<br>
+        <ul>
+          <li>Interior &amp; Exterior Painting</li>
+          <li>Wallpaper Hanging &amp; Removal</li>
+          <li>Refinishing</li>
+          <li>Pressure Cleaning</li>
+          <li>Staining &amp; Sealing</li>
+          <li>Carpentry</li>
+        </ul>
+        <p>Our team of professionals are fully licensed, insured, and will treat your residence as if it were their own. Contact us today for a free estimate and consultation!</p>
+        <p>Lean on our experience - just not your walls (at least until the paint's dry). </p>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="blueish" id="contact">
+  <div class="container">
+    <div class="title">
+      <div class="icon"><img src="img/chatbubble.png"></div>
+      <div class="title-img"><img class="img-responsive" alt="Get in Touch" src="img/getintouch.png"></div>
+    </div>
+    <div class="subtitles">
+      <div class="left"><a href="#">what people say</a></div>
+      <div class="center"><a href="#">about nick</a></div>
+      <div class="right active"><a href="#">get in touch</a></div>
+    </div>
+
+    <div class="form-content">
+
+      <div class="row" style="padding: 10px 0 20px;">
+        <div class="col-lg-4">
+          <div class="media">
+            <div class="pull-left"><img class="media-object" src="img/phone.png" alt=""></div>
+            <div class="media-body">
+              <span class="media-title">Phone</span>
+              <p> Give us a ring anytime at <span class="phonenumber">914.576.9141</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="media">
+            <div class="pull-left"><img class="media-object" src="img/www.png" alt=""></div>
+            <div class="media-body">
+              <span class="media-title">Web</span>
+              <p>Complete the form below or email us at <a href="mailto:parentepainting19@gmail.com">parentepainting19<br>@gmail.com</a>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="media">
+            <div class="pull-left"><img class="media-object" src="img/twitter.png" alt=""></div>
+            <div class="media-body">
+              <span class="media-title">Media</span>
+              <p>Like us on <a href="#">Facebook</a> and follow us on <a href="#">Twitter</a>!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="formish-wrapper" style="max-width: 700px;margin: 0 auto;">
+        <form action="javascript: void(0);" class="form-horizontal" role="form" method="post">
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="name" name="FullName" placeholder="Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="email" name="Email" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword" class="col-sm-2 control-label">Phone</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="phone" name="Phone" id="phoneNum" placeholder="Phone">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword" class="col-sm-2 control-label">Message</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" name="Message" rows="5"></textarea>
+            </div>
+          </div>
+          <div style="text-align: right;"><button type="submit" class="btn btn-primary">Send Your Request</button></div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>

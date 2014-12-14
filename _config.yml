@@ -1,0 +1,10 @@
+# Site settings
+title: Parente Painting
+email: parentepainting19@gmail.com
+description: "Painting services provided in the greater Westchester Area."
+baseurl: ""
+url: "http://parentepainting.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
