@@ -1,4 +1,37 @@
---
---
+---
+---
 
-@import '../components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  padding-top: 20px;
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.navbar {
+  margin-bottom: 20px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+
+.container .text-muted {
+  margin: 20px 0;
+}
