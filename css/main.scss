@@ -1,7 +1,10 @@
 ---
 ---
 
+$icon-font-path: "../components/bootstrap-sass/assets/fonts/bootstrap/";
+
 @import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import 'bourbon/app/assets/stylesheets/_bourbon.scss';
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -29,9 +32,105 @@ body {
 
 /* Custom page CSS
 -------------------------------------------------- */
-/* Not required for template or sticky footer method. */
+.container .jumbo-header {
+  margin-bottom: 0px;
 
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 
-.container .text-muted {
-  margin: 20px 0;
+  margin-top: 15px;
+}
+
+.navbar-default {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.container .jumbotron,
+.navbar {
+  padding: 10px;
+}
+
+.container .jumbotron {
+  padding-top: 250px;
+  padding-bottom: 28px;
+}
+
+.navbar {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* Affix
+-------------------------------------------------- */
+
+nav.affix-top {
+
+}
+
+/* Header
+-------------------------------------------------- */
+
+.Header--Picture {
+
+  position: relative;
+
+  figure {
+    position: absolute;
+    width: 100%;
+    bottom: -25px;
+    z-index: 4;
+    margin: 0;
+  }
+
+}
+
+.Header--Branding {
+  h1 {
+    margin: 0;
+  }
+}
+
+.Header--Buttons {
+  text-align: right;
+}
+
+/* Projects Section
+-------------------------------------------------- */
+
+#projects {
+  border-top: 1px solid #e5e5e5;
+}
+
+.gallery figure {
+  position: relative;
+
+  padding: 0px;
+  border-radius: 0px;
+
+  .caption {
+    position: absolute;
+    bottom: 0px;
+    height: 55px;
+
+    width: 100%;
+    overflow: hidden;
+
+    background: rgba(255,255,255,.8);
+
+  }
+
+  h4, h5 {
+    margin: 0;
+  }
+
+}
+
+/* Sidebar Item
+-------------------------------------------------- */
+
+.Sidebar-Item {
+  .title {
+    margin: 0;
+  }
 }

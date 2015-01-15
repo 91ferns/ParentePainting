@@ -1,21 +1,53 @@
-<!-- Static navbar -->
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Project name</a>
+<!-- header -->
+<!-- Main component for a primary marketing message or call to action -->
+<header class="jumbotron jumbo-header">
+  <div class="row">
+    <div class="col-md-7 col-md-offset-2">
+      <div class="Header--Branding">
+        <h1><img src="{{ "img/logowhite.png" | prepend: site.baseurl }}" alt="Parente Professional Painting" class="img-responsive"></h1>
+      </div>
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Top</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Reviews</a></li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container-fluid -->
+    <div class="col-md-3">
+      <div class="Header--Buttons">
+        <a class="btn btn-primary" href="javascript:void(0);" role="button">Follow</a>
+        <a id="contact-btn" class="btn btn-primary" href="javascript:void(0);" role="button">Contact Me</a>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- end -->
+
+<!-- Static navbar -->
+<nav class="navbar navbar-default" data-target="#main-wrapper" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+
+    <div class="row">
+      <div class="col-md-2">
+        <div class="Header--Picture">
+          <figure class="thumbnail">
+            <img src="{{ "img/nickparente.jpg" | prepend: site.baseurl }}" alt="Nick Parente" class="img-responsive">
+          </figure>
+        </div>
+      </div>
+      <div class="col-md-offset-2 col-md-10">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#introduction">Introduction</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+
+      </div> <!-- ./col-md-10 -->
+    </div> <!-- /.row -->
+
 </nav>

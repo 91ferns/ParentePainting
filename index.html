@@ -2,11 +2,95 @@
 layout: default
 ---
 
-<!-- Main component for a primary marketing message or call to action -->
-<div class="jumbotron">
-  <h1>Navbar example</h1>
-  <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-  <p>
-    <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-  </p>
-</div>
+<section id="introduction">
+
+  <div class="row">
+
+    <div class="col-md-offset-2 col-md-7">
+
+      <p>A lifelong resident of New Rochelle, President and founder Nick Parente brings nearly three decades of industry experience to every job. His knowledge and expertise form the foundation on which Parente Painting has been built. He believes that a strong focus on customer satisfaction is paramount, and strives to exceed his clients' expecations on every project.</p>
+      <p>Since 1988, Parente Painting has committed itself to providing the highest-quality painting, wall covering, and restorative services to the greater West Chester Area. We take pride in our work and in bringing your vision to life - whether it be a simple touchup, restoration, or complete redesign. Our 25 years of industry experience means we'll get your job done right, on budget, and on time, no matter how large or small.</p>
+      <p>Our Services Include:<br>
+      <ul>
+        <li>Interior &amp; Exterior Painting</li>
+        <li>Wallpaper Hanging &amp; Removal</li>
+        <li>Refinishing</li>
+        <li>Pressure Cleaning</li>
+        <li>Staining &amp; Sealing</li>
+        <li>Carpentry</li>
+      </ul>
+      <p>Our team of professionals are fully licensed, insured, and will treat your residence as if it were their own. Contact us today for a free estimate and consultation!</p>
+      <p>Lean on our experience - just not your walls (at least until the paint's dry). </p>
+
+    </div>
+
+    <div class="col-md-3">
+      <aside class="Sidebar-Item">
+        <h3 class="title">Parente Painting</h3>
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><i class="glyphicon glyphicon-home"></i></th>
+              <td>Mark</td>
+            </tr>
+            <tr>
+              <th scope="row"><i class="glyphicon glyphicon-phone"></i></th>
+              <td>Jacob</td>
+            </tr>
+            <tr>
+              <th scope="row"><i class="glyphicon glyphicon-envelope"></i></th>
+              <td>Larry</td>
+            </tr>
+          </tbody>
+        </table>
+      </aside>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="projects">
+
+  <div class="row">
+
+    <div class="col-md-offset-2 col-md-10">
+
+      <div class="gallery">
+
+        <h2>11 Projects</h2>
+
+        <div class="row">
+          {% for i in (1...5) %}
+          <div class="col-sm-6 col-md-4">
+            <figure class="thumbnail">
+              <img src="http://st.houzz.com/fimgs/19c14bdd0466427c_7839-w308-h308-b0-p0--entry.jpg" alt="..." class="img-responsive">
+              <div class="caption">
+                <h4>Thumbnail label</h4>
+                <h5>29 Photos</h5>
+              </div>
+            </figure>
+          </div>
+          {% endfor %}
+        </div>
+
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+</section>

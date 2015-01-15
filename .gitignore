@@ -4,3 +4,5 @@ _notes
 *.tmp
 *.swp
 *.log
+
+.sass-cache

@@ -17,6 +17,8 @@ require.config({
 
 require(['jquery', 'bootstrap'], function($) {
 
-  
+  $('#contact-btn').click(function() {
+    $('#Modal').modal();
+  });
 
 });

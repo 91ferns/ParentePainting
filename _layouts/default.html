@@ -4,13 +4,13 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
-<body>
+<body data-spy="scroll" data-target=".navbar-default">
 
   {% include head.html %}
 
     <body>
 
-    <div class="container">
+    <div class="container" id="main-wrapper">
 
       {% include header.html %}
 
@@ -23,6 +23,8 @@
     </div>
 
     {% include footer.html %}
+
+    {% include modal.html %}
 
     </body>
 </html>
