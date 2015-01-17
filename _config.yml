@@ -11,3 +11,10 @@ sass:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# Collections
+collections:
+  projects:
+    foo: bar
+  reviews:
+    foo: bar

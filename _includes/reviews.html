@@ -1,0 +1,23 @@
+<div class="gallery clearfix">
+
+  <h2>{{site.reviews.size}} Reviews</h2>
+
+  <div class="list-group">
+    {% for review in site.reviews %}
+    <div class="list-group-item">
+      <div class="stars">
+        {% for i in (1...5) %}
+          {% if review.stars >= i %}
+          <i class="glyphicon glyphicon-star"></i>
+          {% else %}
+          <i class="glyphicon glyphicon-star-empty"></i>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <h4 class="list-group-item-heading">Review by <strong>{{review.author}}</strong></h4>
+      <p class="list-group-item-text">{{review.content}}</p>
+    </div>
+    {% endfor %}
+  </div>
+
+</div>

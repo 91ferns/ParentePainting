@@ -64,30 +64,21 @@ layout: default
 
     <div class="col-md-offset-2 col-md-10">
 
-      <div class="gallery">
+      {% include projects.html %}
 
-        <h2>11 Projects</h2>
+    </div>
 
-        <div class="row">
-          {% for i in (1...5) %}
-          <div class="col-sm-6 col-md-4">
-            <figure class="thumbnail">
-              <img src="http://st.houzz.com/fimgs/19c14bdd0466427c_7839-w308-h308-b0-p0--entry.jpg" alt="..." class="img-responsive">
-              <div class="caption">
-                <h4>Thumbnail label</h4>
-                <h5>29 Photos</h5>
-              </div>
-            </figure>
-          </div>
-          {% endfor %}
-        </div>
+  </div>
 
+</section>
 
-        </div>
+<section id="reviews">
 
-      </div>
+  <div class="row">
 
+    <div class="col-md-offset-2 col-md-10">
 
+      {% include reviews.html %}
 
     </div>
 

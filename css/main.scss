@@ -98,15 +98,17 @@ nav.affix-top {
 /* Projects Section
 -------------------------------------------------- */
 
-#projects {
+#projects, #reviews {
   border-top: 1px solid #e5e5e5;
 }
 
-.gallery figure {
+.gallery .carousel {
   position: relative;
 
   padding: 0px;
   border-radius: 0px;
+
+  margin-bottom: 30px;
 
   .caption {
     position: absolute;
@@ -115,6 +117,8 @@ nav.affix-top {
 
     width: 100%;
     overflow: hidden;
+
+    padding: 10px;
 
     background: rgba(255,255,255,.8);
 
