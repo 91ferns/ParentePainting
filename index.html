@@ -26,27 +26,31 @@ layout: default
 
     <div class="col-md-3">
       <aside class="Sidebar-Item">
-        <h3 class="title">Parente Painting</h3>
+        <h2 class="title">Parente Painting</h2>
 
         <table class="table table-striped">
           <thead>
             <tr>
-              <th></th>
-              <th></th>
+              <th style="width: 32px;" valign="top"></th>
+              <th valign="top"></th>
             </tr>
           </thead>
           <tbody>
             <tr>
+              <th scope="row"><i class="glyphicon glyphicon-user"></i></th>
+              <td><strong>Contact:</strong> {{site.owner}}</td>
+            </tr>
+            <tr>
               <th scope="row"><i class="glyphicon glyphicon-home"></i></th>
-              <td>Mark</td>
+              <td><strong>Address:</strong> {{site.address}}</td>
             </tr>
             <tr>
               <th scope="row"><i class="glyphicon glyphicon-phone"></i></th>
-              <td>Jacob</td>
+              <td><strong>Phone:</strong> {{site.phone}}</td>
             </tr>
             <tr>
               <th scope="row"><i class="glyphicon glyphicon-envelope"></i></th>
-              <td>Larry</td>
+              <td><a href="mailto:{{site.email}}">{{site.email}}</a></td>
             </tr>
           </tbody>
         </table>
