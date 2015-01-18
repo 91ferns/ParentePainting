@@ -1,5 +1,5 @@
 ---
-author:  "Stephen Parente"
+author:  "Joshua Martz"
 stars: 5
 ---
-Marcony and crew just did some interior painting for me. It was a great experience. I have used two other paint companies in recent years, and my experience with them was bad. Marcony and crew rest.
+The job was perfect and my home is like it was before they started. They really took care of my home and left it as clean as they found it.
