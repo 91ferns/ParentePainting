@@ -2,4 +2,4 @@
 author:  "Sarah Kowalski"
 stars: 5
 ---
-hey were extremely professional and took the time to make sure everything was done exactly how I wanted. I couldn't be happier.
+They were extremely professional and took the time to make sure everything was done exactly how I wanted. I couldn't be happier.
