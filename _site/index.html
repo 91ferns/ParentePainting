@@ -496,41 +496,12 @@
           
         
           
-          <i class="glyphicon glyphicon-star-empty"></i>
+          <i class="glyphicon glyphicon-star"></i>
           
         
       </div>
-      <h4 class="list-group-item-heading">Review by <strong>Stephen Parente</strong></h4>
-      <p class="list-group-item-text">Marcony and crew just did some interior painting for me. It was a great experience. I have used two other paint companies in recent years, and my experience with them was bad. Marcony and crew rest.
-</p>
-    </div>
-    
-    <div class="list-group-item">
-      <div class="stars">
-        
-          
-          <i class="glyphicon glyphicon-star"></i>
-          
-        
-          
-          <i class="glyphicon glyphicon-star"></i>
-          
-        
-          
-          <i class="glyphicon glyphicon-star"></i>
-          
-        
-          
-          <i class="glyphicon glyphicon-star-empty"></i>
-          
-        
-          
-          <i class="glyphicon glyphicon-star-empty"></i>
-          
-        
-      </div>
-      <h4 class="list-group-item-heading">Review by <strong>Stephen Parente</strong></h4>
-      <p class="list-group-item-text">Marcony and crew just did some interior painting for me. It was a great experience. I have used two other paint companies in recent years, and my experience with them was bad. Marcony and crew rest.
+      <h4 class="list-group-item-heading">Review by <strong>Alan Grey</strong></h4>
+      <p class="list-group-item-text"><p>Nick and his team were fantastic - my rooms look great. There’s no doubt whom I would call for my next project, and I wouldn’t recommend anyone else.</p>
 </p>
     </div>
     
@@ -558,8 +529,37 @@
           
         
       </div>
-      <h4 class="list-group-item-heading">Review by <strong>Stephen Parente</strong></h4>
-      <p class="list-group-item-text">Marcony and crew just did some interior painting for me. It was a great experience. I have used two other paint companies in recent years, and my experience with them was bad. Marcony and crew rest.
+      <h4 class="list-group-item-heading">Review by <strong>Sarah Kowalski</strong></h4>
+      <p class="list-group-item-text"><p>They were extremely professional and took the time to make sure everything was done exactly how I wanted. I couldn’t be happier.</p>
+</p>
+    </div>
+    
+    <div class="list-group-item">
+      <div class="stars">
+        
+          
+          <i class="glyphicon glyphicon-star"></i>
+          
+        
+          
+          <i class="glyphicon glyphicon-star"></i>
+          
+        
+          
+          <i class="glyphicon glyphicon-star"></i>
+          
+        
+          
+          <i class="glyphicon glyphicon-star"></i>
+          
+        
+          
+          <i class="glyphicon glyphicon-star"></i>
+          
+        
+      </div>
+      <h4 class="list-group-item-heading">Review by <strong>Joshua Martz</strong></h4>
+      <p class="list-group-item-text"><p>The job was perfect and my home is like it was before they started. They really took care of my home and left it as clean as they found it.</p>
 </p>
     </div>
     
@@ -581,7 +581,7 @@
 
     <footer class="footer">
   <div class="container">
-    <p class="text-muted">Place sticky footer content here.</p>
+    <p class="text-muted">&copy; Parente Painting. Site by <a href="//91ferns.com">91ferns Web Development</a></p>
   </div>
 </footer>
 
@@ -589,7 +589,7 @@
     <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <form class="form-horizontal">
+      <form class="form-horizontal" id="ContactForm" action="http://ferns91.herokuapp.com/api/external/mailer/new" method="POST">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title">Contact Nick</h4>
@@ -599,31 +599,35 @@
           <div class="form-group">
             <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
             <div class="col-sm-10">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="John Doe">
+              <input type="text" class="form-control" id="ContactName" placeholder="John Doe">
             </div>
           </div> <!-- /.form-group -->
 
           <div class="form-group">
             <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
             <div class="col-sm-10">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="johndoe@example.org">
+              <input type="email" class="form-control" name="api_mail[from]" id="ContactEmail" placeholder="johndoe@example.org">
             </div>
           </div> <!-- Email -->
 
           <div class="form-group">
             <label for="inputPassword3" class="col-sm-2 control-label">Message</label>
             <div class="col-sm-10">
-              <textarea class="form-control" id="inputPassword3" placeholder="Password">
-              </textarea>
+              <textarea class="form-control" id="ContactMessage" name="api_mail[message]" placeholder="Message"></textarea>
             </div>
           </div>
 
-
-
         </div>
+
+        <input type="hidden" name="api_mail[application]" value="parente">
+        <input type="hidden" name="api_mail[additional]" value="">
+        <input type="hidden" name="api_mail[subject]" value="Message on ParentePainting.com">
+        <input type="hidden" name="redirect_to" value="http://parentepainting.com/?email_sent=true">
+
+
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-          <button type="submit" class="btn btn-primary">Send</button>
+          <button type="submit" class="btn btn-primary" id="SendMessage">Send</button>
         </div>
       </form>
     </div><!-- /.modal-content -->

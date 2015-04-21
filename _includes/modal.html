@@ -1,7 +1,7 @@
 <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <form class="form-horizontal">
+      <form class="form-horizontal" id="ContactForm" action="http://ferns91.herokuapp.com/api/external/mailer/new" method="POST">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title">Contact Nick</h4>
@@ -11,31 +11,35 @@
           <div class="form-group">
             <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
             <div class="col-sm-10">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="John Doe">
+              <input type="text" class="form-control" id="ContactName" placeholder="John Doe">
             </div>
           </div> <!-- /.form-group -->
 
           <div class="form-group">
             <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
             <div class="col-sm-10">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="johndoe@example.org">
+              <input type="email" class="form-control" name="api_mail[from]" id="ContactEmail" placeholder="johndoe@example.org">
             </div>
           </div> <!-- Email -->
 
           <div class="form-group">
             <label for="inputPassword3" class="col-sm-2 control-label">Message</label>
             <div class="col-sm-10">
-              <textarea class="form-control" id="inputPassword3" placeholder="Password">
-              </textarea>
+              <textarea class="form-control" id="ContactMessage" name="api_mail[message]" placeholder="Message"></textarea>
             </div>
           </div>
 
-
-
         </div>
+
+        <input type="hidden" name="api_mail[application]" value="parente">
+        <input type="hidden" name="api_mail[additional]" value="">
+        <input type="hidden" name="api_mail[subject]" value="Message on ParentePainting.com">
+        <input type="hidden" name="redirect_to" value="{{ '/?email_sent=true' | prepend: site.baseurl | prepend: site.url }}">
+
+
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-          <button type="submit" class="btn btn-primary">Send</button>
+          <button type="submit" class="btn btn-primary" id="SendMessage">Send</button>
         </div>
       </form>
     </div><!-- /.modal-content -->
